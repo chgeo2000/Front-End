@@ -1,0 +1,55 @@
+<form [formGroup]="carForm">
+        
+    
+    <h2>{{car!.model | uppercase}} Details</h2>
+
+    <img src="{{car?.imageUrl}}" alt="" class="img-fluid rounded-circle w-60"> 
+
+    
+    <div *ngIf="car!.id"> 
+        <label for = "id">Id: </label> 
+        <input class = "id" id = "id" [(ngModel)]="car!.id" formControlName="id">
+    </div> 
+
+    
+    <div>
+        <label for = "model">Model: </label>
+        <input class = "model" id = "model" [(ngModel)]="car!.model" formControlName="model">
+    </div>
+    
+    <div>
+        <label for = "price">Price: </label>
+        <input class = "price" id = "price" [(ngModel)]="car!.price" formControlName="price">
+    </div>
+    
+    <div>
+        <label for = "imageUrl">ImageUrl: </label>
+        <input class = "imageUrl" id = "imageUrl" [(ngModel)]="car!.imageUrl" formControlName="imageUrl">
+    </div> 
+    
+    <div>
+        <label for = "kmTravelled">Km Travelled: </label>
+        <input class = "kmTravelled" id = "kmTravelled" [(ngModel)]="car!.kmTravelled" formControlName="kmTravelled">
+    </div>
+    
+    <div >
+        <label  for = "manufacturingYear">Manufacturing Year: </label>
+        <input class="manufacturingYear" id = "manufacturingYear" [(ngModel)]="car!.manufacturingYear" formControlName="manufacturingYear">
+    </div>
+    
+    <div>
+        <label for = "city">City: </label>
+        <input class = "city" id = "city" [(ngModel)]="car!.city" formControlName="city">
+    </div>
+    
+    <div>
+        <label for = "transmissionType">Transmission Type: </label>
+        <input class = "transmissionType" id = "transmissionType" [(ngModel)]="car!.transmissionType" formControlName="transmissionType">
+    </div>
+    
+    
+    <button (click)="goBack()">Back</button>
+    <button (click)='save()'>Save</button>
+    
+
+</form>

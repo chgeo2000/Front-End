@@ -1,0 +1,64 @@
+label {
+    color: #435960;
+    font-weight: bold;
+  }
+  input {
+    font-size: 1em;
+    padding: .5rem;
+  }
+  button {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+img{
+  border-radius: 8px;
+  width: 30%;
+  display: block;
+  margin : 0 auto;
+  
+}
+.id{
+  margin-left: 166px;
+}
+
+.model{
+  margin-left: 135px;
+}
+
+.price{
+  margin-left: 142px;
+}
+
+
+.manufacturingYear{
+  margin-left: 34px;
+}
+.kmTravelled{
+  margin-left: 83px;
+}
+
+.imageUrl{
+  margin-left: 114px;
+}
+
+.city{
+  margin-left: 152px;
+
+  
+}
+
+.transmissionType{
+  margin-left: 38px;
+}
